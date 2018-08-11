@@ -8,5 +8,5 @@ import pl.coderslab.entity.Team;
 
 public interface TeamRepository extends JpaRepository<Team, Long> {
 
-	List<Team> findAllByOrderByPointsDesc();
+	List<Team> findAllByOrderByPointsDescGoalsDifferenceDesc();
 }

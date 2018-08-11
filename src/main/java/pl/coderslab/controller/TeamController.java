@@ -133,7 +133,7 @@ public class TeamController {
 	
 	@ModelAttribute("teams")
 	public List<Team> getTeams() {
-		return teamRepository.findAllByOrderByPointsDesc();
+		return teamRepository.findAllByOrderByPointsDescGoalsDifferenceDesc();
 	}
 	
 }
